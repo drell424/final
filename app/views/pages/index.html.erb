@@ -1,0 +1,14 @@
+<ul class="pull-right">
+	                    <% if user_signed_in? %>
+                 
+                        <li><%= link_to 'My Account', users_path %></li>
+                    
+                    	<% else %>
+                    
+                    	<li><%= link_to 'Sign In', new_user_session_path %></li>
+                    	<% end %>
+</ul>
+
+	<h1>Welcome to RealtyApp</h1>
+	<h2>Create beautiful websites for your listings</h2>
+	<button type="button" class="btn btn-success btn-lg"><%= link_to 'New Listing ', new_listing_path %><i class="fa fa-plus"></i></button>

@@ -1,0 +1,47 @@
+
+
+<div class="row row-one">
+
+	<div class="col-md-5"><h3>
+		Welcome, <%= current_user.email %>
+	</h3></div>
+	<div class="col-md-5 col-md-offset-2">
+		<button type="button" class="btn btn-success btn-lg pull-right"><%= link_to 'New Listing ', new_listing_path %> <i class="fa fa-plus"></i></button>
+	</div>
+
+</div><!-- row-one -->
+
+<div class="row row-two">
+
+	<div class="col-md-12">
+		<h2>Current Listings:</h2>
+
+		<table>
+  <thead>
+    <tr>
+      <th>Adddress</th>
+      
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+   <% current_user.listings.each do |listing| %>
+      <tr>
+        <td><%= listing.address %></td>
+       
+        <td><%= link_to 'Show', listing_path(listing) %></td>
+        <td><%= link_to 'Edit', edit_listing_path(listing) %></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+		
+
+	</div>
+
+</div><!-- row-two -->
+
+
