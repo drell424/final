@@ -1,27 +1,10 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Final for BEWD at General Assembly
 
-Things you may want to cover:
+This is an app for real estate professionals.  You can quickly and easily make custom looking websites for your listings.  Just input the information and the app takes care of the rest. 
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 
 
 Please feel free to use a different markup language if you do not plan to run
