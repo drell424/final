@@ -7,5 +7,4 @@ This is an app for real estate professionals.  You can quickly and easily make c
 
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
