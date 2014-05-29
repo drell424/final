@@ -1,0 +1,46 @@
+	
+	<div class="header">
+		<h1 class="address"><span class="house-num">100 <br></span><%= @listing.address %></h1>
+	</div><!-- header -->
+	<div class="wrapper">
+	<div class="content first">
+		
+
+	 	<div class="image"> 
+			<ul class="bxslider">
+				<!-- <li><img src="/images/pic1.jpg" /></li>
+				<li><img src="/images/pic2.jpg" /></li>
+				<li><img src="/images/pic3.jpg" /></li> -->
+				<li><img src="http://placehold.it/900x458" /></li>
+				<li><img src="http://placehold.it/900x458" /></li>
+				<li><img src="http://placehold.it/900x458" /></li>
+				<li><img src="http://placehold.it/900x458" /></li>
+			</ul>
+			
+		</div><!-- images -->
+		<div class="description half pull-left">
+			<h3>Description</h3>
+			<p><%= @listing.description %></p>
+
+			
+		</div><!-- description -->
+		<div class="details half pull-right">
+			<h3>Details</h3>
+			<p><%= @listing.details %></p>
+		</div><!-- details -->
+		
+
+	</div><!-- content -->
+	</div><!-- wrapper -->
+
+	<div class="agent">
+		<div class="content">
+		<h3 class="pull-left"><%= @listing.user.name %> - <span class="title"><%= @listing.user.title %></span></h3>
+        			
+					
+					<span class="phone"><%= @listing.user.phone %></span>
+        			<address class="pull-right">
+        				<%= @listing.user.address %>
+        			</address>
+        </div><!-- content -->			
+	</div><!-- agent -->

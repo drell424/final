@@ -3,7 +3,7 @@
 <div class="row row-one">
 
 	<div class="col-md-5"><h3>
-		Welcome, <%= current_user.email %>
+		Welcome, <%= current_user.name %>
 	</h3></div>
 	<div class="col-md-5 col-md-offset-2">
 		<button type="button" class="btn btn-success btn-lg pull-right"><%= link_to 'New Listing ', new_listing_path %> <i class="fa fa-plus"></i></button>
@@ -19,7 +19,7 @@
 		<table>
   <thead>
     <tr>
-      <th>Adddress</th>
+      <th>Address</th>
       
       <th colspan="3"></th>
     </tr>
@@ -32,6 +32,7 @@
        
         <td><%= link_to 'Show', listing_path(listing) %></td>
         <td><%= link_to 'Edit', edit_listing_path(listing) %></td>
+        <td><%= link_to 'Delete', listing_path(listing), method: :delete, data: { confirm: 'Are you certain you want to delete this?' } %></td>
         
       </tr>
     <% end %>

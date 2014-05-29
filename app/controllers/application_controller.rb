@@ -10,19 +10,16 @@ class ApplicationController < ActionController::Base
 
   before_filter :configure_permitted_parameters, if: :devise_controller?
 
-  # def after_sign_in_path_for(resource)
-  # users_path
-  # end
 
   protected
 
   def configure_permitted_parameters
     devise_parameter_sanitizer.for(:account_update) << :avatar
-    # devise_parameter_sanitizer.for(:account_update) << :address
-    # devise_parameter_sanitizer.for(:account_update) << :website
-    # devise_parameter_sanitizer.for(:account_update) << :phone
-    # devise_parameter_sanitizer.for(:account_update) << :title
-    # devise_parameter_sanitizer.for(:account_update) << :name
+    devise_parameter_sanitizer.for(:account_update) << :address
+    devise_parameter_sanitizer.for(:account_update) << :website
+    devise_parameter_sanitizer.for(:account_update) << :phone
+    devise_parameter_sanitizer.for(:account_update) << :title
+    devise_parameter_sanitizer.for(:account_update) << :name
 
   end
 end

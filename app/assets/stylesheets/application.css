@@ -10,6 +10,114 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
  *= require_self
+
+ *= require scaffolds.css.scss
+ *= require jquery.bxslider.css
+
  */
+
+
+
+img.logo {
+	position: relative;
+	top: 10px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.temp-row-1 img {
+	margin-top: 21px;
+}
+
+.container {
+	max-width: 900px;
+	padding-bottom: 20px;
+}
+
+.img-holder {
+	text-align: center;
+	margin: 20px 0 0 0;
+}
+
+.border {
+	border-bottom: 1px solid grey;
+}
+
+.navbar {
+	border-radius: 0px !important; 
+}
+
+button a {
+	color: white;
+}
+
+td {
+	min-width: 50px;
+	padding: 0 30px 10px 0;
+}
+
+th {
+	font-size: 1.5em;
+}
+
+.listing-form {
+	text-align: center;
+	width: 40%;
+	margin: 0 auto;
+}
+
+.listing-form .text {
+	display: inline-block;
+	margin: 0 auto;
+	width: 100%;
+
+}
+
+.listing-form textarea,
+.listing-form input {
+	width: 100%;
+}
+
+.listing-form textarea, 
+.listing-form input {
+	border: 2px solid #2C3E50;
+
+}
+
+
+.center {
+	text-align: center;
+}
+
+.listing-form .field,
+.listing-form .actions {
+	margin: 20px auto; 
+}
+
+.listing-form .images input {
+	margin: 20px auto; 	
+	border: none;
+}
+
+.listing-form label {
+	font-size: 24px;
+	font-weight: 300;
+}
+
+
+.listing-form .actions input {
+	font-size: 24px;
+	background-color: white;
+}
+
+
+.home-links li {
+	list-style: none;
+}
+
+
+
+
+
+

@@ -1,3 +1,177 @@
 // Place all the styles related to the Listings controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+// show styles
+
+/*
+
+colors:
+background : #404141
+header : #1A1A1A
+yellow : #C2B72B
+863 458
+*/
+
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #404141;
+	color: white;
+	position: relative;
+	z-index: -555;
+}
+
+.wrapper {
+	background: #7db9e8; /* Old browsers */
+	background: -moz-linear-gradient(top,  #9A9A9A 0%, #999999 32%, #404141 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9A9A9A), color-stop(32%,#999999), color-stop(100%,#404141)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #9A9A9A 0%,#999999 32%,#404141 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #9A9A9A 0%,#999999 32%,#404141 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #9A9A9A 0%,#999999 32%,#404141 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #9A9A9A 0%,#999999 32%,#404141 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
+
+	overflow: hidden;
+	position: relative;
+	z-index: -1;
+
+}
+
+.header {
+	margin-top: 70px;
+	height: 121px;
+	background-color: #1A1A1A; 
+	border-top: 1px solid #C2B72B;
+	color: white;
+	text-align: center;
+
+	-webkit-box-shadow: 0px 8px 5px 0px rgba(194, 183, 43, 0.5);
+-moz-box-shadow:    0px 8px 5px 0px rgba(194, 183, 43, 0.5);
+box-shadow:         0px 8px 5px 0px rgba(194, 183, 43, 0.5);
+}
+
+.address {
+	text-transform: capitalize;
+	font-size: 24px;
+	position: relative;
+	top: 10px;
+	font-style: italic; 
+}
+
+.house-num {
+	font-size: 70px;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.content {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.image {
+	margin: 20px 0;
+	text-align: center;
+}
+
+img {
+	display: inline-block;
+}
+
+.half {
+	width: 50%;
+	padding: 20px;
+}
+
+.half.details {
+	padding-right: 0;
+}
+
+.half.description {
+	padding-left: 0;
+}
+
+.pull-right {
+	float: right;
+}
+
+.pull-left {
+	float: left;
+}
+
+.center {
+	text-align: center;
+}
+
+.agent {
+	height: 75px;
+	background-color: #1A1A1A;
+	border-bottom: 1px solid #C2B72B;
+	border-top: 1px solid #C2B72B;
+	clear: both;
+	width: 100%;
+	position: relative;
+	top: 20px;
+	margin-bottom: 40px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.phone,
+.agent address,
+.agent h4,
+.agent h3 {
+	display: inline-block;
+	line-height: 75px;
+}
+
+h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.title {
+	font-size: .65em;
+	font-weight: 300;
+	letter-spacing: 1px;
+	font-style: italic;
+}
+
+.bx-wrapper .bx-next {
+	right: 20px;
+}
+
+.half p {
+	font-weight: 300;
+	letter-spacing: .5px;
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+
+.agent .content {
+	max-width:900px;
+}
+
+.agent .phone {
+	float: left;
+	margin-left: 130px;
+}
+
+p.price {
+	margin: 0 auto;
+text-align: center;
+color: #C2B72B;
+font-weight: bold;
+font-style: italic;
+font-size: 30px;
+}
+
